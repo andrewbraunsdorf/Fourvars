@@ -1,0 +1,13 @@
+var gas = "Gas";
+var price = "price";
+var gasprice = 2.759;
+var miles = 375.9;
+var gallons = 11.75;
+var mpg = miles / gallons;
+var costgas = gasprice * gallons;
+var pricepermile = costgas / miles;
+
+
+console.log(gas, price, "is,", gasprice.toLocaleString('en-US', {style: 'currency', currency: 'USD'}), "per gallon." );
+console.log("Your miles per gallon is", mpg.toFixed(2) + ".");
+console.log("Your price per mile is", pricepermile.toLocaleString('en-US', {style: 'currency', currency: 'USD'}) + ".")
